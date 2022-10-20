@@ -1,7 +1,7 @@
 require './slack_service.rb'
 require 'pry'
 
-print "Insert Cohort ID: 
+print "Insert Cohort ID:"
 c_id = gets.chomp #YOUR COHORTS CHANNEL ID (EX. C02HDS205L7)
 
 print "Insert Timestamp ID:"
