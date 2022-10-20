@@ -1,11 +1,11 @@
 require './slack_service.rb'
 require 'pry'
 
-# hard code this for the inning
-c_id = #YOUR COHORTS CHANNEL ID (EX. C02HDS205L7)
+print "Insert Cohort ID: 
+c_id = gets.chomp #YOUR COHORTS CHANNEL ID (EX. C02HDS205L7)
 
 print "Insert Timestamp ID:"
-ts_id = gets.chomp
+ts_id = gets.chomp #MESSAGE ID (EX. 1666291500.508089 )
 
 conversation_data = SlackService.conversation_data(c_id,ts_id)
 
